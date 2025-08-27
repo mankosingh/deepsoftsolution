@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angad Singh - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      line-height: 1.6;
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to right, rgba(106,17,203,0.8), rgba(37,117,252,0.8));
+      z-index: -1;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    section {
+      padding: 50px 20px;
+      background: rgba(0,0,0,0.5);
+      margin: 20px;
+      border-radius: 15px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      color: black;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.7);
+    }
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Photo">
+    <h1>Angad Singh</h1>
+    <p>Web Developer | Tech Enthusiast</p>
+    <div class="social">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm Angad Singh, a passionate learner and aspiring web developer. I enjoy building creative projects, exploring new technologies, and continuously improving my coding skills. My goal is to design and develop websites that are not only functional but also visually appealing.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="flex-container">
+      <div class="card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p>XYZ University | 2022 - 2026</p>
+        <p>Major: Computer Science</p>
+      </div>
+      <div class="card">
+        <h3>High School</h3>
+        <p>ABC School | Graduated 2022</p>
+        <p>Focus: Science & Mathematics</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Work Experience / Internships</h2>
+    <div class="flex-container">
+      <div class="card">
+        <h3>Web Development Intern</h3>
+        <p>Tech Company | June 2024 - Aug 2024</p>
+        <p>Worked on frontend development using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Open Source Contributor</h3>
+        <p>GitHub Projects | 2023 - Present</p>
+        <p>Contributed to multiple projects, fixing bugs and adding features.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="flex-container">
+      <div class="card">Portfolio Website</div>
+      <div class="card">Weather App</div>
+      <div class="card">To-Do List</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact me: <a href="mailto:angadsingh.12kgpt">angadsingh.12kgpt</a></p>
+    <p>Phone: 8092330612</p>
+  </footer>
+</body>
+</html>
